@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./index.scss" rel="stylesheet" />
+    <link href="styles.scss" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Floomer Soundboard</title>
+    <meta name="description" content="A simple soundboard bot for your Discord server." />
+    <meta name="keywords" content="Soundboard, Discord, Bot, Floomer" />
+
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = '//matomo.kus.software/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <noscript
+      ><p><img src="//matomo.kus.software/matomo.php?idsite=2&amp;rec=1" style="border: 0" alt="" /></p
+    ></noscript>
+    <!-- End Matomo Code -->
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-neutral-800 text-neutral-50 px-6 max-w-6xl mx-auto">
+    <include src="partials/header.html"></include>
+    <main>
+      <section class="my-28 sm:my-40">
+        <h1 class="text-3xl font-bold mb-4">Discord Soundboard</h1>
+        <p class="text-neutral-300">An easy-to-use Discord soundboard bot. Upload and play your own custom sounds on your server.</p>
+      </section>
+      <section class="my-16 sm:my-28 flex flex-col sm:flex-row gap-8 sm:justify-center sm:items-center">
+        <div>
+          <h2 class="text-lg font-bold">Simple Interface</h2>
+          <p class="text-neutral-300">Play sounds through an easy-to-use website on your phone or desktop.</p>
+        </div>
+        <img
+          src="https://i.postimg.cc/NFnqbYdj/Screenshot-2022-07-09-at-11-09-18-Soundboard.png"
+          class="rounded-lg shadow-xl lg:max-w-xl md:max-w-lg max-w-sm"
+        />
+      </section>
+      <section class="my-16 sm:my-28 flex flex-col sm:flex-row-reverse gap-8 sm:justify-center sm:items-center">
+        <div>
+          <h2 class="text-lg font-bold">Custom Sounds</h2>
+          <p class="text-neutral-300">Upload and edit the sounds available in your guild.</p>
+        </div>
+        <img
+          src="https://i.postimg.cc/hPJqvzGz/Screenshot-2022-07-09-at-11-06-55-Soundboard.png"
+          class="rounded-lg shadow-xl lg:max-w-xl md:max-w-lg max-w-sm"
+        />
+      </section>
+      <section class="my-16 sm:my-28 flex flex-col sm:flex-row gap-8 sm:justify-center sm:items-center">
+        <div>
+          <h2 class="text-lg font-bold">Voice Recordings</h2>
+          <p class="text-neutral-300">Record the last 60 seconds of your voice call. Like Shadowplay but for Discord.</p>
+        </div>
+        <img
+          src="https://i.postimg.cc/g0QXRRZ0/Screenshot-2022-08-09-at-22-00-07-Soundboard.png"
+          class="rounded-lg shadow-xl lg:max-w-xl md:max-w-lg max-w-sm"
+        />
+      </section>
+    </main>
+    <include src="partials/footer.html"></include>
   </body>
 </html>
